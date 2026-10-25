@@ -1,0 +1,26 @@
+{
+  "data": {
+    "source": "yfinance",
+    "tickers": [
+      "AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA", "AVGO",
+      "JPM", "GS", "BAC", "WFC", "BLK", "SCHW", "MS", "AXP",
+      "JNJ", "PFE", "MRK", "ABBV", "LLY", "UNH", "CAT", "GE"
+    ],
+    "start": "2017-01-01",
+    "end": "2025-06-30",
+    "macro": {
+      "enabled": false,
+      "series_ids": ["UNRATE", "T10Y2Y", "FEDFUNDS", "VIXCLS", "DTWEXBGS"]
+    }
+  },
+  "years": [2023, 2024],
+  "model": { "name": "rf" },
+  "strategy": {
+    "top_n": 8,
+    "rebalance_every_n_months": 3,
+    "cost_bps": 10.0,
+    "sector_neutral": false,
+    "max_per_sector": 3
+  },
+  "seed": 42
+}

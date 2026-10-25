@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+out/
+data/cache/
+nlp/cache/
+*.pt
+.env
+.venv/
+TOOLS_RESEARCH.md
